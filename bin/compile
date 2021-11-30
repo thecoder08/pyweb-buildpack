@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -e
+
+echo "-----> Using Pyweb framework"
+echo "-----> Installing Pyweb"
+wget https://github.com/thecoder08/pyweb/releases/download/v1.0.2/pyweb-linux -O $1/pyweb-linux
+chmod +x $1/pyweb-linux
+echo "-----> Just making sure python exists"
+if which python; then
+  printf "Python exists at "
+  echo $(which python)
+else
+  echo "Python does NOT exist!"
+  exit 1
+fi

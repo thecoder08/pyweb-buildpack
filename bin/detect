@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ -f $1/pyweb ]; then
+  echo "PywebFramework"
+  exit 0
+else
+  exit 1
+fi
