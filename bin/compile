@@ -7,7 +7,7 @@ echo "-----> Installing Pyweb"
 wget https://github.com/thecoder08/pyweb/releases/download/v1.0.2/pyweb-linux -O $1/pyweb-linux
 chmod +x $1/pyweb-linux
 echo "-----> Just making sure python exists"
-if which python; then
+if which python > /dev/null; then
   printf "Python exists at "
   echo $(which python)
 else
