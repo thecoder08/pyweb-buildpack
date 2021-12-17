@@ -7,4 +7,4 @@ echo "-----> Installing Pyweb"
 wget https://github.com/thecoder08/pyweb/releases/download/v1.0.3/pyweb-linux -O $1/pyweb-linux
 chmod +x $1/pyweb-linux
 echo "-----> *Installing Python dependencies"
-cat $1/pyweb | xargs pip install
+cat $1/pyweb | xargs python -m pip install
