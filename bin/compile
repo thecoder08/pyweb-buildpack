@@ -7,6 +7,7 @@ echo "-----> Installing Pyweb"
 wget https://github.com/thecoder08/pyweb/releases/download/v1.0.3/pyweb-linux -O $1/pyweb-linux
 chmod +x $1/pyweb-linux
 echo "-----> Installing Pip"
-python -m ensurepip
+wget https://bootstrap.pypa.io/get-pip.py
+python get-pip.py
 echo "-----> Installing Python dependencies"
 cat $1/pyweb | xargs python -m pip install
