@@ -10,4 +10,4 @@ echo "-----> Installing Pip"
 wget https://bootstrap.pypa.io/get-pip.py
 python get-pip.py
 echo "-----> Installing Python dependencies"
-cat $1/pyweb | xargs python -m pip install
+cat $1/pyweb | xargs python -m pip install --target $1
